@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="OVELIA brings considered design direction and clear project coordination to residential renovation in Hong Kong.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OVELIA.HK — Considered interiors. Clearly managed.">
+  <meta property="og:description" content="Residential renovation in Hong Kong, with design direction and project coordination in one considered conversation.">
+  <meta property="og:image" content="assets/projects/hero-central-living.webp">
+  <title>OVELIA.HK — Considered interiors. Clearly managed.</title>
+  <link rel="preload" as="image" href="assets/projects/hero-central-living.webp">
+  <style>
+    :root {
+      --paper: #f4f1e9;
+      --paper-light: #faf8f3;
+      --ink: #272820;
+      --muted: #707168;
+      --line: #d9d5ca;
+      --olive: #686c50;
+      --olive-dark: #454936;
+      --clay: #c8a58b;
+      --serif: "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
+      --sans: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
+      --wrap: 1260px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--olive); outline-offset: 4px; }
+    .wrap { width: min(var(--wrap), calc(100% - 96px)); margin-inline: auto; }
+    .preview-note { min-height: 30px; display: flex; align-items: center; justify-content: center; padding: 7px 18px; background: #303328; color: #ece9df; font-size: 9px; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
+    .site-header { border-bottom: 1px solid rgba(39,40,32,.12); }
+    .header-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: flex; align-items: center; width: 126px; flex: none; }
+    .brand img { width: 100%; height: auto; mix-blend-mode: multiply; }
+    .nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); margin-left: auto; }
+    .nav a { color: #55564e; font-size: 10px; letter-spacing: .07em; transition: color .2s ease; }
+    .nav a:hover { color: var(--olive); }
+    .button, .text-link { display: inline-flex; align-items: center; justify-content: center; gap: 13px; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+    .button { padding: 15px 19px; background: var(--olive-dark); color: #fff; border: 1px solid var(--olive-dark); transition: background .2s ease, transform .2s ease; }
+    .button:hover { background: #35392b; transform: translateY(-1px); }
+    .text-link { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .text-link:hover { border-color: var(--olive); }
+    .arrow { font-size: 15px; line-height: 0; }
+    .hero { padding: 70px 0 92px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1.04fr; gap: clamp(42px, 7vw, 104px); align-items: center; }
+    .eyebrow { color: var(--olive); font-size: 9px; letter-spacing: .18em; line-height: 1.6; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 560px; margin: 25px 0 22px; font-family: var(--serif); font-size: clamp(50px, 5.25vw, 68px); font-weight: 400; letter-spacing: -.047em; line-height: .99; }
+    h1 em { color: var(--olive); font-weight: 400; }
+    .hero-copy { max-width: 420px; margin-bottom: 0; color: #67685f; font-family: var(--serif); font-size: 17px; line-height: 1.75; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 23px; margin-top: 30px; }
+    .hero-visual { position: relative; margin: 0; aspect-ratio: 1.17; overflow: hidden; background: #ddd7ca; }
+    .hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+    .photo-caption { position: absolute; right: 16px; bottom: 16px; padding: 11px 14px; background: rgba(250,248,243,.94); color: #55564e; font-size: 8px; letter-spacing: .14em; text-transform: uppercase; }
+    .hero-index { position: absolute; top: 16px; left: 16px; padding: 9px 11px; background: rgba(250,248,243,.88); color: #55564e; font-size: 8px; letter-spacing: .14em; text-transform: uppercase; }
+    .section { padding: 100px 0; border-top: 1px solid var(--line); }
+    .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
+    .section-heading h2, .split-heading h2 { max-width: 680px; margin: 11px 0 0; font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); font-weight: 400; letter-spacing: -.04em; line-height: 1.04; }
+    .section-heading p { max-width: 330px; margin: 0 0 4px; color: var(--muted); font-family: var(--serif); font-size: 15px; line-height: 1.65; }
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 46px 24px; }
+    .project-card:nth-child(even) { margin-top: 48px; }
+    .project-card-link { display: block; }
+    .project-photo { aspect-ratio: 1.42; overflow: hidden; background: #e6e1d6; }
+    .project-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.65,.25,1); }
+    .project-card:hover .project-photo img { transform: scale(1.025); }
+    .project-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-top: 15px; }
+    .project-meta h3 { margin: 0; font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -.015em; }
+    .project-meta span { color: var(--muted); font-size: 8px; letter-spacing: .13em; text-align: right; text-transform: uppercase; }
+    .approach { background: #e9e6dc; }
+    .approach .section-heading { margin-bottom: 52px; }
+    .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #c8c5b9; }
+    .step { padding: 24px 22px 0 0; }
+    .step:not(:first-child) { padding-left: 22px; border-left: 1px solid #c8c5b9; }
+    .step-number { color: var(--olive); font-family: var(--serif); font-size: 16px; }
+    .step h3 { margin: 20px 0 10px; font-family: var(--serif); font-size: 23px; font-weight: 400; letter-spacing: -.02em; }
+    .step p { max-width: 245px; margin: 0; color: #6a6b62; font-size: 11px; line-height: 1.8; }
+    .clarity-grid, .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(48px, 9vw, 135px); align-items: start; }
+    .split-heading h2 { max-width: 470px; }
+    .clarity-copy, .about-copy { padding-top: 8px; }
+    .clarity-copy > p, .about-copy > p { max-width: 590px; color: #66675f; font-family: var(--serif); font-size: 17px; line-height: 1.75; }
+    .scope-list { margin-top: 26px; border-top: 1px solid var(--line); }
+    .scope-row { display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 10px; letter-spacing: .05em; }
+    .scope-row span:last-child { color: #85847a; text-align: right; }
+    .about { background: var(--paper-light); }
+    .about-note { display: inline-flex; align-items: flex-start; gap: 10px; max-width: 480px; margin-top: 12px; padding-top: 18px; border-top: 1px solid var(--line); color: #77776d; font-size: 9px; letter-spacing: .08em; line-height: 1.8; }
+    .about-note::before { content: ""; width: 6px; height: 6px; flex: none; margin-top: 5px; background: var(--clay); border-radius: 50%; }
+    .contact { padding: 96px 0 90px; background: #424638; color: #f7f4ed; }
+    .contact-grid { display: grid; grid-template-columns: 1.15fr .75fr; gap: 70px; align-items: end; }
+    .contact .eyebrow { color: #c7c7af; }
+    .contact h2 { max-width: 690px; margin: 16px 0 19px; font-family: var(--serif); font-size: clamp(48px, 6.5vw, 78px); font-weight: 400; letter-spacing: -.045em; line-height: .99; }
+    .contact-copy { max-width: 490px; margin-bottom: 0; color: #d1d0c6; font-family: var(--serif); font-size: 16px; line-height: 1.75; }
+    .contact .button { margin-top: 24px; background: #e7e1d3; color: #32362a; border-color: #e7e1d3; }
+    .contact .button:hover { background: #fff; }
+    .contact-card { padding: 25px; border: 1px solid rgba(240,237,226,.28); }
+    .contact-card .card-label { color: #c7c7af; font-size: 8px; letter-spacing: .16em; text-transform: uppercase; }
+    .contact-card p { margin: 14px 0 0; color: #dfded5; font-family: var(--serif); font-size: 18px; line-height: 1.6; }
+    .footer { padding: 25px 0; background: #383c30; color: #c8c8bc; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 26px; }
+    .footer-logo { width: 92px; filter: brightness(0) invert(1); opacity: .74; }
+    .footer p { max-width: 720px; margin: 0; color: #bdbeb2; font-size: 8px; letter-spacing: .055em; line-height: 1.75; text-align: right; }
+    @media (max-width: 900px) {
+      .wrap { width: min(var(--wrap), calc(100% - 52px)); }
+      .nav { gap: 17px; }
+      .nav a { font-size: 9px; }
+      .hero-grid { gap: 38px; }
+      .hero-visual { aspect-ratio: 1.02; }
+      .section { padding: 82px 0; }
+      .project-grid { gap: 36px 18px; }
+      .project-card:nth-child(even) { margin-top: 32px; }
+      .step { padding-right: 14px; }
+      .step:not(:first-child) { padding-left: 14px; }
+      .contact-grid { gap: 44px; }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: calc(100% - 38px); }
+      .preview-note { min-height: 34px; font-size: 7px; letter-spacing: .08em; }
+      .header-inner { min-height: 80px; flex-wrap: wrap; gap: 12px 14px; padding: 12px 0 13px; }
+      .brand { width: 103px; }
+      .header-cta { padding: 12px 12px; font-size: 8px; gap: 8px; }
+      .nav { order: 3; width: 100%; justify-content: space-between; gap: 12px; margin: 0; padding-top: 7px; border-top: 1px solid rgba(39,40,32,.09); }
+      .nav a { font-size: 8px; letter-spacing: .04em; }
+      .hero { padding: 48px 0 62px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 31px; }
+      h1 { max-width: 450px; margin: 18px 0 16px; font-size: clamp(52px, 13.5vw, 73px); }
+      .hero-copy { font-size: 16px; }
+      .hero-actions { gap: 17px; margin-top: 23px; }
+      .button { padding: 14px 14px; font-size: 8px; }
+      .text-link { font-size: 8px; }
+      .hero-visual { aspect-ratio: 1.13; }
+      .photo-caption { right: 10px; bottom: 10px; padding: 9px 11px; font-size: 7px; }
+      .hero-index { top: 10px; left: 10px; font-size: 7px; }
+      .section { padding: 70px 0; }
+      .section-heading { display: block; margin-bottom: 29px; }
+      .section-heading h2, .split-heading h2 { margin-top: 9px; font-size: 43px; }
+      .section-heading p { margin-top: 14px; font-size: 14px; }
+      .project-grid { grid-template-columns: 1fr; gap: 28px; }
+      .project-card:nth-child(even) { margin-top: 0; }
+      .project-photo { aspect-ratio: 1.34; }
+      .project-meta h3 { font-size: 21px; }
+      .project-meta span { font-size: 7px; }
+      .steps { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+      .step { padding: 19px 12px 0 0; }
+      .step:not(:first-child) { padding-left: 12px; }
+      .step:nth-child(3) { padding-left: 0; border-left: 0; }
+      .step h3 { margin-top: 13px; font-size: 20px; }
+      .step p { font-size: 10px; }
+      .clarity-grid, .about-grid { grid-template-columns: 1fr; gap: 26px; }
+      .clarity-copy, .about-copy { padding: 0; }
+      .clarity-copy > p, .about-copy > p { font-size: 16px; }
+      .scope-row { font-size: 9px; }
+      .about-note { font-size: 8px; }
+      .contact { padding: 70px 0; }
+      .contact-grid { grid-template-columns: 1fr; gap: 31px; }
+      .contact h2 { font-size: 56px; }
+      .contact-copy { font-size: 15px; }
+      .contact-card { padding: 21px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; gap: 18px; }
+      .footer-logo { width: 84px; }
+      .footer p { text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-note">Website preview · English-language service and enquiry details pending confirmation</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="OVELIA home">
+        <img src="assets/ovelia-logo-transparent.png" alt="OVELIA living spaces">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Our approach</a>
+        <a href="#quotation">Quotation</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="button header-cta" href="#contact">Book a consultation <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">Hong Kong · Residential renovation</div>
+          <h1>Considered interiors.<br><em>Clearly managed.</em></h1>
+          <p class="hero-copy">Residential renovation in Hong Kong, with design direction and project coordination brought into one considered conversation.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Book a consultation <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#projects">Explore selected homes <span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/projects/hero-central-living.webp" alt="Living and dining space in a completed Central Hong Kong residential project" width="2280" height="1613" fetchpriority="high">
+          <span class="hero-index">Selected project · 01</span>
+          <figcaption class="photo-caption">Residential · Central, Hong Kong</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Selected projects</div>
+            <h2>Homes shaped around the way people live.</h2>
+          </div>
+          <p>A selection of completed residential interiors across Central and the Mid-Levels.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-card-link" href="cases/central-living.html" aria-label="Read the Central living space case study">
+              <div class="project-photo"><img src="assets/projects/central-living.webp" alt="Warm timber shelving and a living area in a Central residential project" width="2280" height="1613" loading="lazy"></div>
+              <div class="project-meta"><h3>Warm textures, considered display</h3><span>Central · Residential</span></div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-card-link" href="cases/midlevels-kitchen.html" aria-label="Read the Mid-Levels kitchen case study">
+              <div class="project-photo"><img src="assets/projects/midlevels-kitchen.webp" alt="Grey cabinetry, pale worktops and an island in a Mid-Levels kitchen" width="2280" height="1613" loading="lazy"></div>
+              <div class="project-meta"><h3>A kitchen in soft, quiet tones</h3><span>Mid-Levels · Kitchen</span></div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-card-link" href="cases/central-stone.html" aria-label="Read the Central stone detail case study">
+              <div class="project-photo"><img src="assets/projects/central-marble-bathroom.webp" alt="Marble wall finishes and crisp white joinery in a Central residential interior" width="2280" height="1613" loading="lazy"></div>
+              <div class="project-meta"><h3>Marble, balanced by clean lines</h3><span>Central · Interior detail</span></div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-card-link" href="cases/midlevels-open-plan.html" aria-label="Read the Mid-Levels open-plan home case study">
+              <div class="project-photo"><img src="assets/projects/midlevels-open-plan.webp" alt="Open-plan living and dining space with warm timber flooring in the Mid-Levels" width="2280" height="1613" loading="lazy"></div>
+              <div class="project-meta"><h3>Open-plan living in warm timber</h3><span>Mid-Levels · Residential</span></div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Our approach</div>
+            <h2>A clear way forward.</h2>
+          </div>
+          <p>A straightforward outline for moving from an initial discussion to an agreed project scope.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-number">01</span><h3>Initial conversation</h3><p>Share the home, your priorities and what you would like to explore.</p></article>
+          <article class="step"><span class="step-number">02</span><h3>Design direction</h3><p>Discuss a design direction that responds to the brief and daily life.</p></article>
+          <article class="step"><span class="step-number">03</span><h3>Scope &amp; quotation</h3><p>Set out proposed work, inclusions, exclusions and assumptions.</p></article>
+          <article class="step"><span class="step-number">04</span><h3>Project coordination</h3><p>Coordinate the agreed project scope with the relevant parties.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quotation">
+      <div class="wrap clarity-grid">
+        <div class="split-heading">
+          <div class="eyebrow">Before work begins</div>
+          <h2>Clarity before commitment.</h2>
+        </div>
+        <div class="clarity-copy">
+          <p>A useful quotation should make the proposed work easier to understand: what is included, what is excluded, and what still needs to be confirmed.</p>
+          <div class="scope-list">
+            <div class="scope-row"><span>Proposed work scope</span><span>Set out for the project</span></div>
+            <div class="scope-row"><span>Inclusions &amp; exclusions</span><span>Clearly distinguished</span></div>
+            <div class="scope-row"><span>Assumptions &amp; provisional items</span><span>Identified for discussion</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="split-heading">
+          <div class="eyebrow">About OVELIA</div>
+          <h2>Good work starts with a clear conversation.</h2>
+        </div>
+        <div class="about-copy">
+          <p>OVELIA is a residential renovation brand for homeowners in Hong Kong. The focus is considered design direction, clear scope and project coordination—so important decisions can be discussed before work begins.</p>
+          <div class="about-note">English-language service availability, company profile and team information are to be verified before public launch.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="eyebrow">Start a conversation</div>
+          <h2>Tell us about your home.</h2>
+          <p class="contact-copy">Share what you are planning, what matters most and where you are in the process. We will add the verified consultation route once it is confirmed.</p>
+          <a class="button" href="#contact-details">Consultation details <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="contact-card" id="contact-details">
+          <div class="card-label">Consultations</div>
+          <p>Verified contact details and a booking link are pending confirmation for this preview.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img class="footer-logo" src="assets/ovelia-logo-transparent.png" alt="OVELIA living spaces">
+      <p>Private website preview. Please confirm English-language service capability, enquiry details and company information before public launch. Project photographs are from supplied OVELIA project records; unverified testimonials and credentials have been omitted.</p>
+    </div>
+  </footer>
+</body>
+</html>
